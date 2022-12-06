@@ -2,14 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaRegUserCircle, FaWallet } from "react-icons/fa";
 import { FcCollect } from "react-icons/fc";
-import Modal from '../../Pages/Modal/Modal';
 
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100 w-11/12 mx-auto">
+        <div className="navbar bg-base-100">
             <div className="flex-1">
-                <Link className="btn btn-ghost normal-case text-4xl text-purple-700 font-bold">Faucets</Link>
+                <Link to='/' className="btn btn-ghost normal-case text-4xl text-purple-700 font-bold">Faucets</Link>
             </div>
             <div className="flex gap-0 md:gap-2">
                 <div className="flex items-center gap-2">
