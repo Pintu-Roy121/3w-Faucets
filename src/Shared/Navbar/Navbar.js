@@ -36,8 +36,8 @@ const Navbar = () => {
                         <FaRegUserCircle className='text-3xl text-gray-500' />
                     </label>
                     <ul tabIndex={0} className="mt-3 p-2 text-gray-900 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
-                        <li><Link className='font-semibold text-gray-500 text-base'>Log In</Link></li>
-                        <li><Link className='font-semibold text-gray-500 text-base'>Sign Up</Link></li>
+                        <li><Link to='/login' className='font-semibold text-gray-500 text-base'>Log In</Link></li>
+                        <li><Link to='/signup' className='font-semibold text-gray-500 text-base'>Sign Up</Link></li>
                         <li><Link className='font-semibold text-gray-500 text-base'>FAQ</Link></li>
                     </ul>
                 </div>

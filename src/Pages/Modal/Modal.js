@@ -5,9 +5,6 @@ import social from '../../assets/social.png'
 const Modal = () => {
     return (
         <div>
-            {/* <label htmlFor="wallet-modal" className="btn">open modal</label> */}
-
-            {/* Put this part before </body> tag */}
             <input type="checkbox" id="wallet-modal" className="modal-toggle" />
             <div className="modal">
                 <div className="modal-box relative">
@@ -22,10 +19,6 @@ const Modal = () => {
                             <img className='w-1/4 md:w-1/2' src={social} alt="" />
                             <p className='text-xl text-purple-700 font-bold'>WalletConnect</p>
                         </div>
-                        {/* <div className='object-cover flex flex-col items-center justify-center text-center p-4 w-full md:w-1/2 rounded-lg bg-slate-100'>
-                            <img className='w-1/2' src={social} alt="" />
-                            <p className='text-xl text-purple-700 font-bold'>MetaMask</p>
-                        </div> */}
                     </div>
                 </div>
             </div>
