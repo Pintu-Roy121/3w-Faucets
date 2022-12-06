@@ -1,0 +1,32 @@
+[
+    {
+        "id": "01",
+        "img": "../src/assets/logo.svg",
+        "name": "Arbitrum Rinkeby"
+    },
+    {
+        "id": "02",
+        "img": "../src/assets/logo.svg",
+        "name": "Ethereum Kovan"
+    },
+    {
+        "id": "03",
+        "img": "../src/assets/logo.svg",
+        "name": "Avalanche Fuji"
+    },
+    {
+        "id": "04",
+        "img": "../src/assets/logo.svg",
+        "name": "BNB Chain Testnet"
+    },
+    {
+        "id": "05",
+        "img": "../src/assets/logo.svg",
+        "name": "Harmony Testnet"
+    },
+    {
+        "id": "06",
+        "img": "../src/assets/logo.svg",
+        "name": "Polygon Mumbai"
+    }
+]

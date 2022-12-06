@@ -14,7 +14,7 @@ const Wallet = () => {
         <div className='bg-white m-8 p-6'>
             <div className='bg-sky-50 p-2 flex gap-2 items-center'>
                 <HiExclamationTriangle className='text-2xl text-purple-700' />
-                <h1>Your wallet is connected to Ethereum Kovan, so you are requesting Ethereum Kovan Link/ETH.</h1>
+                <h1>Your wallet is connected to <span className='font-semibold'>Ethereum Kovan</span>, so you are requesting <span className='font-semibold'>Ethereum Kovan</span> Link/ETH.</h1>
             </div>
             <div className='w-full md:w-1/2'>
                 <div className="form-control w-full my-4">
@@ -41,7 +41,6 @@ const Wallet = () => {
             </div>
             <div className='mt-8'>
                 <RequestHistory></RequestHistory>
-
             </div>
         </div>
     );

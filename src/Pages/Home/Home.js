@@ -4,7 +4,13 @@ import Notice from '../Notice/Notice';
 import RequestSection from './RequestSection/RequestSection';
 import Wallet from './Wallet/Wallet';
 
+
 const Home = () => {
+    // const [wallet, setWallet] = useState('')
+
+    // const handleWallet = (element) => {
+    //     setWallet(element);
+    // }
     return (
         <div>
             <Notice></Notice>

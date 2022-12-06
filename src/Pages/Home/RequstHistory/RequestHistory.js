@@ -3,34 +3,42 @@ import TableETH from '../TableETH/TableETH';
 import TablwTestLink from '../TableTestLink/TablwTestLink';
 
 const RequestHistory = () => {
-    const [ETHTransaction, setETHTransaction] = useState(true)
-    const [TestLink, setTestLink] = useState(true)
+    const [eth, setEth] = useState('bg-primary');
+    const [test, setTest] = useState('bg-gray-200 text-black');
 
-    const EthTransaction = () => {
-        setETHTransaction(!ETHTransaction)
-        setTestLink(!TestLink)
+    const handleEth = () => {
+        setEth('bg-primary');
+        setTest('bg-gray-200 text-black')
     }
 
-    const TestLinkTransaction = () => {
-        setTestLink(!TestLink)
-        setETHTransaction(!ETHTransaction);
+    const handleTest = () => {
+        setTest('bg-primary');
+        setEth('bg-gray-200 text-black')
     }
 
     return (
-        <div className='md:w-full lg:w-1/2'>
-            <h1 className='font-bold'>Request History</h1>
-            <div className='mt-5 flex gap-2'>
-                <button onClick={EthTransaction} className='px-4 py-2 text-sm md:text-base text-center rounded-md bg-primary text-white cursor-pointer' >ETH Transaction History</button>
-                <button onClick={TestLinkTransaction} className='px-4 py-2 text-sm md:text-base text-center rounded-md bg-gray-100 cursor-pointer'>TestLink Transaction History</button>
+        <div className='w-full lg:w-1/2'>
+            <h1 className='font-bold my-3'>Request History</h1>
+            <div className='flex gap-2'>
+                <button
+                    onClick={handleEth}
+                    className={`px-4 py-2 text-sm md:text-base text-center ${eth} rounded-md text-white cursor-pointer`}>
+                    ETH Transaction History
+                </button>
+                <button
+                    onClick={handleTest}
+                    className={`px-4 py-2 text-sm md:text-base text-center ${test} rounded-md text-white cursor-pointer`}>
+                    TestLink Transaction History
+                </button>
             </div>
             <div>
                 {
-                    ETHTransaction || TestLink ?
+                    eth === 'bg-primary' ? <>
                         <TableETH></TableETH>
+                    </>
                         :
                         <TablwTestLink></TablwTestLink>
                 }
-                {/* <TablwTestLink></TablwTestLink> */}
             </div>
         </div>
     );

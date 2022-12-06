@@ -2,11 +2,11 @@ import React from 'react';
 
 const TablwTestLink = () => {
     return (
-        <div className="mt-5 md:w-full">
+        <div className="mt-5 lg:w-full">
             <table className="w-full border">
                 <thead className='border'>
                     <tr className='border'>
-                        <th className='border p-2'>Sr</th>
+                        <th className='border p-2'>SL</th>
                         <th className='border p-2'>Time</th>
                         <th className='border p-2'>Amount</th>
                         <th className='border p-2'>Hash</th>
@@ -17,7 +17,7 @@ const TablwTestLink = () => {
                         <td className='border p-2'>1</td>
                         <td className='border p-2'>08:30 AM</td>
                         <td className='border p-2'>487</td>
-                        <td className='border p-2'>Somthing Different will be</td>
+                        <td className='border p-2'>Somthing Different will be here</td>
                     </tr>
                     <tr>
                         <td className='border p-2'>2</td>

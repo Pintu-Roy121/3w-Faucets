@@ -11,10 +11,10 @@ const Login = () => {
 
 
     return (
-        <div className="w-11/12 lg:w-1/2 py-4 my-8 mx-auto rounded-md bg-base-200">
+        <div className="w-11/12 lg:w-1/2 py-4 my-8 mx-auto rounded-md bg-base-100">
             <h1 className='text-4xl font-bold text-center mt-5'>Login</h1>
             <form className="hero-content w-full">
-                <div className="card-body p-4">
+                <div className="card-body p-4 pb-0">
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text font-bold">Email</span>
@@ -40,15 +40,13 @@ const Login = () => {
                     </p>
                 </div>
             </form>
-            <div className="flex flex-col w-full border-opacity-50 text-center p-5">
-                <p className='text-center font-semibold'>Do Not Have an Account? <Link to='/signup'><span className='text-purple-700'>Signup</span></Link>
-                </p>
-                <div className="divider font-semibold">OR</div>
-                <div className='flex text-2xl justify-center gap-4'>
-                    <FaFacebook />
-                    <FaGoogle />
-                    <FaInstagram />
-                </div>
+            <p className='text-center text-black font-semibold'>Do Not Have an Account? <Link to='/signup'><span className='text-purple-700'>Signup</span></Link>
+            </p>
+            <div className="divider font-semibold">OR</div>
+            <div className='flex text-xl mb-8 justify-center gap-4'>
+                <FaGoogle />
+                <FaFacebook />
+                <FaInstagram />
             </div>
         </div>
     );
